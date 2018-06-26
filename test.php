@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head> 
-<TITLE>Card Counting Online Single Player Card Game</TITLE>
+<TITLE>Player vs Player Online Single Player Card Game</TITLE>
 <META NAME="description" CONTENT="Count cards, play card counting on line wagering card game. Card players count cards to determine what the next card is going to be. Card counting is also available as an app for any Android device.">
 <META NAME="robot" CONTENT="index,follow">
-<META NAME="copyright" CONTENT="Copyright © 2013-2014 All Rights Reserved.">
+<META NAME="copyright" CONTENT="Copyright Â© 2013-2018 All Rights Reserved.">
 <META NAME="author" CONTENT="Edward Nolan">
-<META NAME="generator" CONTENT="www.onlinemetatag.com">
 <META NAME="language" CONTENT="English">
 <META NAME="revisit-after" CONTENT="15">
         <meta charset="UTF-8">
