@@ -1,25 +1,25 @@
 
 
 /**
- * I Get the user IP throught the webkitRTCPeerConnection
+ * I currently get the user IP throught the webkitRTCPeerConnection
  * @param onNewIP {Function} listener function to expose the IP locally
  * I then use the IP to assist in producing a wallet address for the user
- * This creates a peer connection. 
+ * This creates a peer connection. I am not sold on the security of this however and want c, c#, or c++.
  * I am researching more on how can I use it to further support the network and maybe
  * provide what is needed for POW, and better confirmations.
- * here are some resources to use and study ...
+ * here are some resources I use and study ...
  * https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection
  * https://ourcodeworld.com/articles/read/257/how-to-get-the-client-ip-address-with-javascript-only
- * We will be using the data channel of WebRTC to allow browser to browser communication.
- * Its free, open source, can be compiled and used for whatever I want.
- * This is for web developers and not voice over IP developers.
+ * I dont want to use WebRTC to allow browser to browser communication due to insecurity.
+ * WebRTC is free, open source, can be compiled and used for whatever you want.
+ * This is for web developers and not voice over IP developers. Not secure for crypto either from my research.
  * Firefox, Chrome, Opera support it. Has Android support.
  * Explorer and Safari do not have WebRTC built into them. These have Plug In Solutions
  * communication is done through Public IP and NOT Local IP. As STUN server will give you your IP address.
  * STUN produces a PIN hole in the net to allow someone else to reach me. If STUN doesnt work we have TURN.
  * TURN relays the media or data through a server, an external server that receives all the data and then
  * streems it to someone else. Use turn if a client cant reach another client directly. TURN is a bandwidth hog.
- * We can still use a server to help for better security.
+ * We can still use a server to help for better security, but I really want a packaged product for download.
  */
  
  
