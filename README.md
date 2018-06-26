@@ -42,7 +42,7 @@ During multiplay, players will use their PvPCoins during game play. The idea is 
 play. Players will wager on what they think might be the next card being turned over from the top of the deck. During
 multiplay, each bet changes the odds, and players will see all the bets as they enter the board. There is a built in leader board as well to allow players of the multiplay to view other players win/loss percentages, and more through player profile page.
 
-<img src="/multiplay//images/profilepage.png" />
+<img src="/multiplay/images/profilepage.png" />
 
 Since I am not as versed in PHP I hired a programmer and we worked side by side to complete the multiplayer version which is also included in the files. I understand however that even PHP is not secure enough and I am hoping someone, or a team of knowledgable c, c#, or c++ coders will join me to make this a very positive experience.
 
