@@ -44,6 +44,6 @@ multiplay, each bet changes the odds, and players will see all the bets as they 
 
 <img src="/multiplay/images/profilepage.png" />
 
-Since I am not as versed in PHP I hired a programmer and we worked side by side to complete the multiplayer version which is also included in the files. I understand however that even PHP is not secure enough and I am hoping someone, or a team of knowledgable c, c#, or c++ coders will join me to make this a very positive experience.
+Since I am not as versed in PHP I hired a programmer and we worked side by side to complete the multiplayer version which is also included in the files. I understand however that even PHP is not secure enough and I am hoping someone, or a team of knowledgable c, c#, or c++ coders will join me to make this crypto version a very positive experience, and a reality.
 
 Thanks for your time, and I hope you enjoy what I have created so far!
