@@ -1,0 +1,17 @@
+PHp Login Script V2.3
+===================================
+Updated - 17/09/2010
+
+* NEW! Added user levels
+* NEW! New and simple Admin area. No need to login separately as admin.
+* NEW! Automatic or Manual activation feature for user registrations
+* Removed SMTP for emails, just uses php mail function
+* Fixed cookie and session vulnerabilities (session hijacking, XSS and injection)
+* NEW! Added salted passwords with sha1 hashing
+* Fixed error messages using GET
+* New user edit feature
+* Added non deletion of admin account.
+* Fixed the IE8 issue button not working 
+
+* Fixed admin md5 exploit in logout.php
+

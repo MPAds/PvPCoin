@@ -1,0 +1,746 @@
+body {
+      background-image:url("images/board.png");
+      background-repeat:no-repeat;
+
+}
+
+.position {         /* odds */
+   color:#FFFFFF;
+}
+#oddsTable {     /* Odds table */
+    width: 1350px;   
+}
+#oddsTable td{      /*  odds table td elements  */
+    width: 105px;
+    text-align:center;
+}
+
+#guess img {        /*  cards  */
+   width: 35px; 
+   height: 48px;
+   position: relative;
+   top: 0px;
+}
+
+#aaa {              /* 5 sec countdown */
+color:#FFFFFF;
+position: absolute;
+left:604px;
+top:120px;
+}
+
+#lock {              /* timeIsUp() lock */
+color:#FFFFFF;
+position: absolute;
+left:623px;
+top:120px;
+display: none;
+}
+
+#winner {              /* checkwagers() */
+color:#FFFFFF;
+position: absolute;
+left:350px;
+top:250px;
+display: none;
+}
+
+#won {              /* checkwagers() */
+color:#FFFFFF;
+position: absolute;
+left:623px;
+top:140px;
+display: none;
+}
+
+#ten {              /* box 10 */
+color:#FFFFFF;
+position: absolute;
+left:150px;
+top:159px;
+height:138px;
+width:120px;
+}
+
+#nine {             /* box 9 */
+color:#FFFFFF;
+position: absolute;
+left:294px;
+top:126px;
+height:138px;
+width:120px;
+}
+
+#eight {            /* box 8 */
+color:#FFFFFF;
+position: absolute;
+left:436px;
+top:174px;
+height:139px;
+width:120px;
+}
+
+#ace {              /* box A */
+color:#FFFFFF;
+position: absolute;
+left:611px;
+top:246px;
+height:140px;
+width:120px;
+}
+
+#two {              /* box 2 */
+color:#FFFFFF;
+position: absolute;
+left:791px;
+top:173px;
+height:140px;
+width:120px;
+}
+
+#three {            /* box 3 */
+color:#FFFFFF;
+position: absolute;
+left:940px;
+top:125px;
+height:140px;
+width:120px;
+}
+
+#four {             /* box 4 */
+color:#FFFFFF;
+position: absolute;
+left:1093px;
+top:160px;
+height:138px;
+width:120px;
+}
+
+#jack {             /* box J */
+color:#FFFFFF;
+position: absolute;
+left:149px;
+top:343px;
+height:139px;
+width:120px;
+}
+
+#queen {            /* box Q */
+color:#FFFFFF;
+position: absolute;
+left:291px;
+top:381px;
+height:138px;
+width:120px;
+}
+
+#king {             /* box K */
+color:#FFFFFF;
+position: absolute;
+left:438px;
+top:331px;
+height:139px;
+width:120px;
+}
+
+#seven {            /* box 7 */
+color:#FFFFFF;
+position: absolute;
+left:792px;
+top:332px;
+height:140px;
+width:121px;
+}
+
+#six {              /* box 6 */
+color:#FFFFFF;
+position: absolute;
+left:943px;
+top:378px;
+height:140px;
+width:121px;
+}
+
+#five {             /* box 5 */
+color:#FFFFFF;
+position: absolute;
+left:1093px;
+top:344px;
+height:139px;
+width:121px;
+}
+
+#textbox {         /* wager entry */
+position: absolute;
+left:928px;
+top:592px;
+resize: none;
+display: none;
+}
+
+#button {         /* button */
+position: absolute;
+left:980px;
+top:590px;
+resize: none;
+display: none;
+}
+
+p {           /* money */
+color:#FFFFFF;
+position: absolute;
+left:550px;
+top:560px;
+}
+
+p1 {               /* status */
+color:#FFFFFF;
+position: absolute;
+left:550px;
+top:600px;
+}
+
+p2 {               /* bet */
+color:#FFFFFF;
+position: absolute;
+left:1080px;
+top:590px;
+}
+
+#toteA {              /* wagers A */
+position: absolute;
+left:664px;
+top:362px;
+color:#660000;
+}
+
+#aces {              /* cards in play */
+position: absolute;
+left:653px;
+top:249px;
+color:#660000;
+}
+
+#tote2 {              /* wagers 2 */
+position: absolute;
+left:844px;
+top:289px;
+color:#660000;
+}
+
+#twos {              /* cards in play */
+position: absolute;
+left:833px;
+top:176px;
+color:#660000;
+}
+
+#tote3 {              /* wagers 3 */
+position: absolute;
+left:993px;
+top:241px;
+color:#660000;
+}
+
+#threes {              /* cards in play */
+position: absolute;
+left:982px;
+top:128px;
+color:#660000;
+}
+
+#tote4 {              /* wagers 4 */
+position: absolute;
+left:1146px;
+top:274px;
+color:#660000;
+}
+
+#fours {              /* cards in play */
+position: absolute;
+left:1135px;
+top:161px;
+color:#660000;
+}
+
+#tote8 {              /* wagers 8 */
+position: absolute;
+left:489px;
+top:289px;
+color:#660000;
+}
+
+#eights {              /* cards in play */
+position: absolute;
+left:478px;
+top:176px;
+color:#660000;
+}
+
+#tote9 {              /* wagers 9 */
+position: absolute;
+left:347px;
+top:241px;
+color:#660000;
+}
+
+#nines {              /* cards in play */
+position: absolute;
+left:336px;
+top:128px;
+color:#660000;
+}
+
+#tote10 {              /* wagers 10 */
+position: absolute;
+left:201px;
+top:274px;
+color:#660000;
+}
+
+#tens {              /* cards in play */
+position: absolute;
+left:190px;
+top:161px;
+color:#660000;
+}
+
+#toteJ {              /* wagers J */
+position: absolute;
+left:201px;
+top:459px;
+color:#660000;
+}
+
+#jacks {              /* cards in play */
+position: absolute;
+left:190px;
+top:346px;
+color:#660000;
+}
+
+#toteQ {              /* wagers Q */
+position: absolute;
+left:347px;
+top:497px;
+color:#660000;
+}
+
+#queens {              /* cards in play */
+position: absolute;
+left:336px;
+top:380px;
+color:#660000;
+}
+
+#toteK {              /* wagers K */
+position: absolute;
+left:489px;
+top:445px;
+color:#660000;
+}
+
+#kings {              /* cards in play */
+position: absolute;
+left:478px;
+top:332px;
+color:#660000;
+}
+
+#tote6 {              /* wagers 6 */
+position: absolute;
+left:996px;
+top:497px;
+color:#660000;
+}
+
+#sixs {              /* cards in play */
+position: absolute;
+left:985px;
+top:384px;
+color:#660000;
+}
+
+#tote7 {              /* wagers 7 */
+position: absolute;
+left:844px;
+top:445px;
+color:#660000;
+}
+
+#sevens {              /* cards in play */
+position: absolute;
+left:833px;
+top:332px;
+color:#660000;
+}
+
+#tote5 {              /* wagers 5 */
+position: absolute;
+left:1146px;
+top:459px;
+color:#660000;
+}
+
+#fives {              /* cards in play */
+position: absolute;
+left:1135px;
+top:346px;
+color:#660000;
+}
+
+#toteS {              /* wagers spades */
+position: absolute;
+left:80px;
+top:232px;
+color:#660000;
+}
+
+#spades {              /* cards in play */
+position: absolute;
+left:68px;
+top:200px;
+color:#FFFFFF;
+}
+
+#oddsS {              /* odds spades */
+position: absolute;
+left:80px;
+top:260px;
+color:#FFFFFF;
+}
+
+#spade {             /* box spade */
+color:#FFFFFF;
+position: absolute;
+left:64px;
+top:220px;
+height:42px;
+width:52px;
+}
+
+#toteH {              /* wagers hearts */
+position: absolute;
+left:1262px;
+top:224px;
+color:#660000;
+}
+
+#heart {             /* box heart */
+color:#FFFFFF;
+position: absolute;
+left:1241px;
+top:214px;
+height:40px;
+width:58px;
+}
+
+#hearts {              /* cards in play */
+position: absolute;
+left:1248px;
+top:197px;
+color:#FFFFFF;
+}
+
+#oddsH {              /* odds hearts */
+position: absolute;
+left:1262px;
+top:250px;
+color:#FFFFFF;
+}
+
+#toteC {              /* wagers clubs */
+position: absolute;
+left:1262px;
+top:388px;
+color:#660000;
+}
+
+#clubs {              /* cards in play */
+position: absolute;
+left:1249px;
+top:415px;
+color:#FFFFFF;
+}
+
+#club {             /* box club */
+color:#FFFFFF;
+position: absolute;
+left:1242px;
+top:376px;
+height:40px;
+width:58px;
+}
+
+#oddsC{              /* odds clubs */
+position: absolute;
+left:1264px;
+top:355px;
+color:#FFFFFF;
+}
+
+#toteD{              /* wagers diamonds */
+position: absolute;
+left:80px;
+top:388px;
+color:#660000;
+}
+
+#diams {              /* cards in play */
+position: absolute;
+left:68px;
+top:416px;
+color:#FFFFFF;
+}
+
+#oddsD{              /* odds diamonds */
+position: absolute;
+left:81px;
+top:357px;
+color:#FFFFFF;
+}
+
+#diam {             /* box diamond */
+color:#FFFFFF;
+position: absolute;
+left:64px;
+top:374px;
+height:44px;
+width:52px;
+}
+
+#select {         /* left side bar */
+left:1px;
+top:0px;
+width:44px;
+height:410px;
+}
+
+#pay {               /* pay */
+color:#FFFFFF;
+position: absolute;
+left:635px;
+top:120px;
+}
+
+#visit {             /* visit */
+color:#00af00;
+position: absolute;
+left:60px;
+top:530px;
+}
+
+#hits {             /* hits */
+position: absolute;
+left:150px;
+top:594px;
+}
+
+#adsence {             /* adsence */
+position: absolute;
+left:556px;
+top:388px;
+}
+
+#b1{             /* banner 1 */
+position: absolute;
+left:1090px;
+top:500px;
+width:200px;
+height:30px;
+}
+
+#b2{             /* banner 2 */
+position: absolute;
+left:1090px;
+top:120px;
+width:200px;
+height:30px;
+}
+
+#b3{             /* banner 3 */
+position: absolute;
+left:70px;
+top:120px;
+width:200px;
+height:30px;
+}
+
+#b4{             /* banner 4 */
+position: absolute;
+left:70px;
+top:500px;
+width:200px;
+height:30px;
+}
+
+#b5{             /* banner 5 */
+position: absolute;
+left:160px;
+top:305px;
+width:200px;
+height:30px;
+}
+
+#b6{             /* banner 6 */
+position: absolute;
+left:970px;
+top:305px;
+width:200px;
+height:30px;
+}
+
+#rules {             /* rules */
+color:#FFFFFF;
+position: absolute;
+left:1200px;
+top:610px;
+}
+
+#addyourbanner {    /* add your banner */
+color:#FFFFFF;
+position: absolute;
+left:1200px;
+top:585px;
+}
+
+#faq {             /* faq */
+color:#FFFFFF;
+position: absolute;
+left:1200px;
+top:560px;
+}
+
+#like {             /* like */
+position: absolute;
+left:25px;
+top:565px;
+}
+
+#sound {             /* mp3 */
+position: absolute;
+left:70px;
+top:524px;
+display: none;
+}
+
+#winnings {             /* winnings is payout*/
+color:#FFFFFF;
+position: absolute;
+left:711px;
+top:140px;
+display: none;
+}
+
+#winner {             /* winner */
+color:#FFFFFF;
+position: absolute;
+left:350px;
+top:200px;
+display: none;
+}
+
+#message {             /* message */
+color:#FFFFFF;
+position: absolute;
+left:570px;
+top:162px;
+display: none;
+}
+
+#lost {             /* lost */
+color:#FFFFFF;
+position: absolute;
+left:350px;
+top:200px;
+display: none;
+}
+
+#getready {             /* get ready */
+color:#FFFFFF;
+position: absolute;
+left:130px;
+top:110px;
+display: none;
+}
+
+#signin {             /* signin */
+color:#FFFFFF;
+position: absolute;
+left:664px;
+top:75px;
+}
+
+p6 {               /* overround */
+color:#FFFFFF;
+position: absolute;
+left:1080px;
+top:570px;
+}
+
+#f {             /* facebook button */
+position: absolute;
+left:300px;
+top:566px;
+}
+
+#score {             /* save_score button */
+position: absolute;
+left:850px;
+top:563px;
+}
+
+#register {             /* save_score button */
+position: absolute;
+left:950px;
+top:563px;
+}
+
+#viewscores {             /* save_score button */
+position: absolute;
+left:410px;
+top:565px;
+}
+
+#follow {             /* follow button */
+position: absolute;
+left:58px;
+top:535px;
+}
+
+#contest {             /* contest */
+color:#FFFFFF;
+position: absolute;
+left:330px;
+top:585px;
+}
+
+
+/*  POP UP CSS STUFF IS BELOW */
+
+#mainContent a:link, #mainContent a:visited {color:#fff; text-decoration:none; font-size:18px; background:#000000; padding:5px; -webkit-border-radius:10px;
+-moz-border-radius:10px}
+#mainContent a:hover, #mainContent a:active {color:#fff; text-decoration:none; font-size:18px; background:#333333; padding:5px; -webkit-border-radius:10px;
+-moz-border-radius:10px}
+
+/*STYLES FOR CSS POPUP*/
+
+#blanket {
+background-color:#111;
+opacity: 0.65;
+*background:none;
+position:absolute;
+z-index: 9001;
+top:0px;
+left:0px;
+width:100%;
+}
+
+#popUpDiv {
+position:absolute;
+background:url(images/pop-back.png) no-repeat;
+width:540px;
+height:520px;
+border:5px solid #000;
+z-index: 9002;
+}

@@ -1,0 +1,21 @@
+<script type="text/javascript">  
+
+// I was using this page to test AJAX post. I was never able to get POST to work.
+
+$(document).ready(function() {    
+    $("#raaagh").click(function(){    
+        $.ajax({
+            url: 'score.php',
+            type: "POST",
+            data: ({name: 145}),
+            success: function(data){
+
+                $("#raaagh").html(data);
+            }
+        });        
+    });
+});
+
+</script>
+
+<p id="raaagh">Ajax Away</p>
