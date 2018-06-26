@@ -14,7 +14,7 @@ fwrite($fh, $data);
 fclose($fh);
 
 //redirect
-header("Location: http://www.icardcounting.com/");
+header("Location: http://www.pvpcoin.com/");
 
 
 
