@@ -822,7 +822,7 @@ top:585px;
 
 #unconfirmed {              /* These are .1 reward transactions waiting for 120 confirmations  */
 position: absolute;
-left:232px;
+left:200px;
 top:460px;
 color:#660000;
 }
@@ -834,10 +834,17 @@ top:400px;
 color:#660000;
 }
 
-#spendable {              /* These are confirmed blocks and can spend   */
+#spend {              /* These are confirmed blocks and can spend   */
 position: absolute;
-left:232px;
+left:200px;
 top:390px;
+color:#000000;
+}
+
+#staking {              /* These are confirmed blocks and are earning stake rewards   */
+position: absolute;
+left:200px;
+top:425px;
 color:#000000;
 }
 
@@ -855,7 +862,7 @@ top:400px;
 color:#000000;
 }
 
-#rew {              /* These are rewards   */
+#rew {              /* These are reward values that show up in transaction area  */
 position: absolute;
 left:1120px;
 top:400px;
