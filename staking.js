@@ -38,12 +38,6 @@ function genesisCoins(){
 
 }
 
-
-
-
-
-
-
 function stakeCoins(){
 
 	blockClone = blocks.slice(check);     //    make a clone of blocks     console.log("blocks:", blocks);   console.log("blockClone:", blockClone);
@@ -71,40 +65,8 @@ function stakeCoins(){
 
 }
 
-//if (sofarsogood = 0){ genesisCoins() }  // How many hands to wait b4 starting to compare/confirm, wagers/blocks and move coins?
 if (sofarsogood > 3){ stakeCoins() }    // How many hands to wait b4 starting to compare/confirm, wagers/blocks and start staking?
 genesisCoins()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  function transferCoins(){
