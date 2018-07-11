@@ -15,3 +15,6 @@ function mineblock(difficulty){
 // in order to slow it down. Part of the problem here too though is that the game state doesnt interact correctly
 // with the dom if I call the function after and id is suppose to be updated and displayed. Oh well, it was fun for
 // now and will look at it again in the future or maybe canada can hanle it, lol.
+
+// I also created a new function POW() on on pvpcoin.js for testing this above code.
+// When I would call POW() from within game.js it worked but wouldnt allow the wager to hit the board.
