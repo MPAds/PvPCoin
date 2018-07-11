@@ -17,7 +17,7 @@ var Hash=0;
 var index=0;
 var nonce=0;
 var nnonce=0;
-var difficulty=2;
+//var difficulty=2;
 var Reward=.1000000000000000000;
 var miningReward=0;
 var totalCoins=0;
@@ -33,15 +33,17 @@ var benchmark = 777000000000;        // This is how I simply establish the first
 var confirmed = 0                    // 0 = no
 var playersWallet = 0
 var WalletAddress = 'bfbc0ipe';      // Genesis block of 7,777,000 will go to this address which is my address based on this code only
+var difficulty = 7770000;
 
 var block = {timestamp: "5/29/2018", data: "PLAYERvsPLAYER", Hash: "b5b417f04b", previousHash: "0", nonce: "", confirmed: (confirmed), playersWallet: (WalletAddress), PvPCoins: (7777000)}; // Genesis Block Object - strings text
 blocks.push(block);
-	 
+
+
 	function PVPCoinTransaction() {
     nonce = nonce + 1;
 	var myDate = new Date();                     // console.log(myDate);     // 2018-06-05T02:15:19.213Z
     timestamp = Math.round(+new Date()/1000);    // console.log(timestamp);  // 1528164919 this is seconds, not miliseconds
-	hash = (index + data + timestamp + previoushash + nonce + sum);  //	console.log("new hash number of Hash =", hash);  // = 780410548299 is the Genesis numeric for Genesis hash = b5b417f04b
+	hash = (index + data + timestamp + previoushash + nnonce + nonce + sum);  //	console.log("new hash number of Hash =", hash);  // = 780410548299 is the Genesis numeric for Genesis hash = b5b417f04b
 	Hash = hash.toString(16);                    // console.log("New Hash =", Hash);  // New String of Number Hash = b5b417f04b
 	block = {timestamp: (timestamp), data: (data), Hash: (Hash), previoushash: (previoushash), nonce: (nonce+1), confirmed: (confirmed), playersWallet: (WalletAddress), PvPCoins: (Reward)}; // New Block Object
     blocks.push(block);
@@ -52,13 +54,34 @@ blocks.push(block);
   document.getElementById("unconfirmed").innerHTML = miningReward;
   document.getElementById("transactions").innerHTML = Hash;
   document.getElementById("text").innerHTML = "You Mined Block: ";
-  document.getElementById("rew").innerHTML = " Received .1 of a coin.";
+  document.getElementById("rew").innerHTML = "You received .1 of a coin.";
+  
+//  mineblock(this.difficulty);
+}
+
+	function POW() {
+    nonce = nonce + 1;
+	var myDate = new Date();                     // console.log(myDate);     // 2018-06-05T02:15:19.213Z
+    timestamp = Math.round(+new Date()/1000);    // console.log(timestamp);  // 1528164919 this is seconds, not miliseconds
+	hash = (index + data + timestamp + previoushash + nnonce + nonce + sum);  //	console.log("new hash number of Hash =", hash);  // = 780410548299 is the Genesis numeric for Genesis hash = b5b417f04b
+	Hash = hash.toString(16);                    // console.log("New Hash =", Hash);  // New String of Number Hash = b5b417f04b
+	block = {timestamp: (timestamp), data: (data), Hash: (Hash), previoushash: (previoushash), nonce: (nonce+1), confirmed: (confirmed), playersWallet: (WalletAddress), PvPCoins: (Reward)}; // New Block Object
+    blocks.push(block);
+    previoushash = hash
+	console.log(blocks);
+  miningReward = (miningReward + Reward)
+ // console.log(miningReward);
+  document.getElementById("unconfirmed").innerHTML = miningReward;
+  document.getElementById("transactions").innerHTML = Hash;
+  document.getElementById("text").innerHTML = "POW Block: ";
+  document.getElementById("rew").innerHTML = "You received .1 of a coin.";
+//  mineblock(this.difficulty);
 }
 
 
-// When server is implimented, and or code gets packaged as a stand alone desktop app, address and recode the hard coded genesis so only
-// I have the premine. Also fix the lag in the DOM so it displays the entered wager; for some reason its one wager behind, and I
-// think its due to the genesis, and first wager triggering two blocks.
+// 24 wagers per hand max, each wager producing their own block. The 24 blocks will be repackaged into one bigger block,
+// sent to the server creating the main blockchain. So in essence there are two chains working. 
+// POS will be used and total coin will never exceed 777,000,000. Staking stops once target total coin is reached.
 
 // ---------------------------------------------------------------------------------------
 // ------------------------ Code Above Is Good So Far ------------------------------------
