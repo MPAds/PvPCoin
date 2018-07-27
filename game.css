@@ -54,6 +54,13 @@ top:140px;
 display: none;
 }
 
+#stopBlockchain {              /* line 851 game.js */
+color:#FFFFFF;
+position: absolute;
+left:535px;
+top:140px;
+}
+
 #ten {              /* box 10 */
 color:#FFFFFF;
 position: absolute;

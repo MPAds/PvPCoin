@@ -11,8 +11,9 @@ toteAce = 0, toteTwo = 0, toteThree = 0, toteFour = 0, toteFive = 0, toteSix = 0
 var wager = 0;
 var x = 0;
 var basePath = "";  // Root folder.
+var countWagers = 0
 
-bannerOne()		
+//bannerOne()		
 function imgRandom() {
 document.getElementById("getready").style.display = 'none';
 groups = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; // A,2,3,4,5,6,7,8,9,10,J,Q,K,S,H,C,D
@@ -74,7 +75,7 @@ function pickCard() {
 
 }  // This ends imgRandom and the round
 
-banners()
+//banners()
 //bannerOne()
 
 updateStatus()
@@ -847,6 +848,7 @@ function checkWagers() {  // function wait loop inside
             wait--;
             if (wait == 0){
             clearInterval(waitId);
+			document.getElementById("stopBlockchain").style.display = 'none';
             document.getElementById("won").style.display = 'none';
 			document.getElementById("winner").style.display = 'none';
 			document.getElementById("lost").style.display = 'none';
@@ -1093,7 +1095,7 @@ function checkWagers() {  // function wait loop inside
 
 function resetTote(){
 
- pot=0,toteAce=0, toteTwo=0, toteThree=0, toteFour=0, toteFive=0, toteSix=0, toteSeven=0, toteEight=0, toteNine=0, toteTen=0, toteJack=0, toteQueen=0, toteKing=0; toteSpade=0; toteHeart=0; toteClub=0; toteDiam =0;
+ pot=0,toteAce=0, toteTwo=0, toteThree=0, toteFour=0, toteFive=0, toteSix=0, toteSeven=0, toteEight=0, toteNine=0, toteTen=0, toteJack=0, toteQueen=0, toteKing=0; toteSpade=0; toteHeart=0; toteClub=0; toteDiam =0; countWagers = 0;
 updateStatus()
 document.getElementById("toteA").innerHTML = toteAce;
 document.getElementById("tote2").innerHTML = toteTwo;
@@ -1504,9 +1506,17 @@ function doMath() {             // Blockchain transaction is handles here as wel
           x = money ; }
       money = money - x;  // x is the amount the player is wagering this turn
       pot = pot + x;
-PVPCoinTransaction()    // Execute the blockchain function now
-	data = x;           // Enter the wager amount into the blockchain
-transferCoins()
+	  
+	   if (countWagers < 25) { // Execute the blockchain function now
+		   countWagers += 1 ;
+	   PVPCoinTransaction() 
+	   	data = x;           // Enter the wager amount into the blockchain
+       transferCoins()
+	   }
+	   if (countWagers > 18) {  // Get Ready to STOP the blockchain function now
+		   document.getElementById("stopBlockchain").innerHTML = "Maximum 25 blockchain wagers per hand !";
+	   }
+
     if (wA == 0){  // display wager on tote board for A
     toteAce = toteAce + x;
     toteA.innerHTML = toteAce;
@@ -1626,7 +1636,6 @@ transferCoins()
 	document.getElementById("yourbets").innerHTML = "Diamond accepted. Invite friends to play, Player vs Player. ";
     document.getElementById("betsDiamond").innerHTML = "Diamond";
                       }
-
                }
 doMath()
 
