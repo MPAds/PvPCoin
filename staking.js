@@ -2,12 +2,13 @@
 // All rights reserved.   7/1/18
 
 var check = 0;
-var sofarsogood = 0;
+var sofarsogood = 0;   // This is essentially the mempool. Its also part of BIP35 (Bitcoin Improvement Proposal)
 var letsConfirm = [];
 var staking = 0	
 var spendable = 0
+
 		
-	sofarsogood = sofarsogood + 1;
+	sofarsogood = sofarsogood + 1;  // pending transactions = mempool = sofarsogood
 
 function genesisCoins(){
 
@@ -38,7 +39,7 @@ function genesisCoins(){
 
 }
 
-function stakeCoins(){
+function stakeCoins(){  // moves coins from mempool unconfirmed on dom to staking on dom via sofarsogood
 
 	blockClone = blocks.slice(check);     //    make a clone of blocks     console.log("blocks:", blocks);   console.log("blockClone:", blockClone);
 	letsConfirm.unshift(blockClone[0]);   //    console.log("letsConfirm:", letsConfirm);
@@ -54,7 +55,7 @@ function stakeCoins(){
 		letsConfirm = [];     // console.log("Block Reward Value?", blRewardvalue);
 		
         staking = staking + blRewardvalue;  //  console.log("staking", staking);
-		document.getElementById("staking").innerHTML = staking;
+		document.getElementById("staking").innerHTML = staking;  // 200 confirmations b4 becoming spendable
 		
 		 miningReward = (miningReward - blRewardvalue);
 		 if (miningReward < 0){
@@ -65,14 +66,19 @@ function stakeCoins(){
 
 }
 
-if (sofarsogood > 3){ stakeCoins() }    // How many hands to wait b4 starting to compare/confirm, wagers/blocks and start staking?
+//	console.log("Index+1", blocks.Index+1);
+//	console.log("block.Index", block.Index);
+	
+
+
+if (sofarsogood > 3){ stakeCoins() }    // Wait 3 hands MEMPOOL b4 starting to compare/confirm, wagers/blocks and start staking?
 genesisCoins()
 
 
  function transferCoins(){
 	 
 	sofarsogood = sofarsogood + 1;
-	if (sofarsogood > 3){                 //   How many hands to wait b4 starting to compare/confirm, wagers/blocks?
+	if (sofarsogood > 3){                 //   mempool = sofarsogood = pending transactions
 
 	blockClone = blocks.slice(check);     //    make a clone of blocks     console.log("blocks:", blocks);   console.log("blockClone:", blockClone);
 	letsConfirm.unshift(blockClone[0]);   //    console.log("letsConfirm:", letsConfirm);
