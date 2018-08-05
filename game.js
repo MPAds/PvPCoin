@@ -11,7 +11,7 @@ toteAce = 0, toteTwo = 0, toteThree = 0, toteFour = 0, toteFive = 0, toteSix = 0
 var wager = 0;
 var x = 0;
 var basePath = "";  // Root folder.
-var countWagers = 0
+var countWagers = 0;
 
 //bannerOne()		
 function imgRandom() {
@@ -848,20 +848,23 @@ function checkWagers() {  // function wait loop inside
             wait--;
             if (wait == 0){
             clearInterval(waitId);
-			document.getElementById("stopBlockchain").style.display = 'none';
             document.getElementById("won").style.display = 'none';
 			document.getElementById("winner").style.display = 'none';
 			document.getElementById("lost").style.display = 'none';
             document.getElementById("winnings").style.display = 'none';
 //			document.getElementById("aaa").style.display = 'none';
 			document.getElementById("lock").style.display = 'none';
+			document.getElementById("stopBlockchain").style.display = 'block';
+			document.getElementById("CPU").style.display = 'none';
+//			document.getElementById("text").innerHTML = "CPU Mined: ";
             }
 
             }, 1000);
             }
-       //console.log(rand)
+
+	   						  
            if (( rand == "images/aceclub.png") || ( rand == "images/aceheart.png") || ( rand == "images/acespade.png") || ( rand == "images/acediam.png")) { 
-                   if (toteAce > 0) { 
+                   if (toteAce > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -900,7 +903,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/fourclub.png") || ( rand == "images/fourheart.png") || ( rand == "images/fourspade.png") || ( rand == "images/fourdiam.png"))  {
-                   if (toteFour > 0) { 
+                   if (toteFour > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -913,7 +916,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/fiveclub.png") || ( rand == "images/fiveheart.png") || ( rand == "images/fivespade.png") || ( rand == "images/fivediam.png"))  {
-                   if (toteFive > 0) {  
+                   if (toteFive > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -926,7 +929,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/sixclub.png") || ( rand == "images/sixheart.png") || ( rand == "images/sixspade.png") || ( rand == "images/sixdiam.png"))  {
-                   if (toteSix > 0) {  
+                   if (toteSix > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -939,7 +942,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/sevenclub.png") || ( rand == "images/sevenheart.png") || ( rand == "images/sevenspade.png") || ( rand == "images/sevendiam.png"))  {
-                   if (toteSeven > 0) {  
+                   if (toteSeven > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -952,7 +955,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/eightclub.png") || ( rand == "images/eightheart.png") || ( rand == "images/eightspade.png") || ( rand == "images/eightdiam.png"))  {
-                   if (toteEight > 0) {  
+                   if (toteEight > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -965,7 +968,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/nineclub.png") || ( rand == "images/nineheart.png") || ( rand == "images/ninespade.png") || ( rand == "images/ninediam.png"))  {
-                   if (toteNine > 0) { 
+                   if (toteNine > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -978,7 +981,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/tenclub.png") || ( rand == "images/tenheart.png") || ( rand == "images/tenspade.png") || ( rand == "images/tendiam.png"))  {
-                   if (toteTen > 0) { 
+                   if (toteTen > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -1017,7 +1020,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/kingclub.png") || ( rand == "images/kingheart.png") || ( rand == "images/kingspade.png") || ( rand == "images/kingdiam.png"))  {
-                   if (toteKing > 0) {  
+                   if (toteKing > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -1032,7 +1035,7 @@ function checkWagers() {  // function wait loop inside
                      }
 // Suits Below
       if (( rand == "images/acespade.png") || ( rand == "images/twospade.png") || ( rand == "images/threespade.png") || ( rand == "images/fourspade.png") || ( rand == "images/fivespade.png") || ( rand == "images/sixspade.png") || ( rand == "images/sevenspade.png") || ( rand == "images/eightspade.png") || ( rand == "images/ninespade.png") || ( rand == "images/tenspade.png") || ( rand == "images/jackspade.png") || ( rand == "images/queenspade.png") || ( rand == "images/kingspade.png"))  {
-                   if (toteSpade > 0) {  
+                   if (toteSpade > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -1046,7 +1049,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/aceheart.png") || ( rand == "images/twoheart.png") || ( rand == "images/threeheart.png") || ( rand == "images/fourheart.png") || ( rand == "images/fiveheart.png") || ( rand == "images/sixheart.png") || ( rand == "images/sevenheart.png") || ( rand == "images/eightheart.png") || ( rand == "images/nineheart.png") || ( rand == "images/tenheart.png") || ( rand == "images/jackheart.png") || ( rand == "images/queenheart.png") || ( rand == "images/kingheart.png"))  {
-                   if (toteHeart > 0) {  
+                   if (toteHeart > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -1060,7 +1063,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/aceclub.png") || ( rand == "images/twoclub.png") || ( rand == "images/threeclub.png") || ( rand == "images/fourclub.png") || ( rand == "images/fiveclub.png") || ( rand == "images/sixclub.png") || ( rand == "images/sevenclub.png") || ( rand == "images/eightclub.png") || ( rand == "images/nineclub.png") || ( rand == "images/tenclub.png") || ( rand == "images/jackclub.png") || ( rand == "images/queenclub.png") || ( rand == "images/kingclub.png"))  {
-                   if (toteClub > 0) {  
+                   if (toteClub > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -1074,7 +1077,7 @@ function checkWagers() {  // function wait loop inside
                   wait()
                      }
       if (( rand == "images/acediam.png") || ( rand == "images/twodiam.png") || ( rand == "images/threediam.png") || ( rand == "images/fourdiam.png") || ( rand == "images/fivediam.png") || ( rand == "images/sixdiam.png") || ( rand == "images/sevendiam.png") || ( rand == "images/eightdiam.png") || ( rand == "images/ninediam.png") || ( rand == "images/tendiam.png") || ( rand == "images/jackdiam.png") || ( rand == "images/queendiam.png") || ( rand == "images/kingdiam.png"))  {
-                   if (toteDiam > 0) {  
+                   if (toteDiam > 0) {
                           document.getElementById("lock").style.display = 'none';
                           document.getElementById("won").style.display = 'block';
 						  document.getElementById("winner").style.display = 'block';
@@ -1095,7 +1098,8 @@ function checkWagers() {  // function wait loop inside
 
 function resetTote(){
 
- pot=0,toteAce=0, toteTwo=0, toteThree=0, toteFour=0, toteFive=0, toteSix=0, toteSeven=0, toteEight=0, toteNine=0, toteTen=0, toteJack=0, toteQueen=0, toteKing=0; toteSpade=0; toteHeart=0; toteClub=0; toteDiam =0; countWagers = 0;
+ pot=0,toteAce=0, toteTwo=0, toteThree=0, toteFour=0, toteFive=0, toteSix=0, toteSeven=0, toteEight=0, toteNine=0;
+ toteTen=0, toteJack=0, toteQueen=0, toteKing=0, toteSpade=0, toteHeart=0, toteClub=0, toteDiam =0;
 updateStatus()
 document.getElementById("toteA").innerHTML = toteAce;
 document.getElementById("tote2").innerHTML = toteTwo;
@@ -1131,7 +1135,7 @@ document.getElementById("betsDiamond").innerHTML = "";
 document.getElementById("betsClubs").innerHTML = "";
 document.getElementById("betsHearts").innerHTML = "";
 document.getElementById("betsSpades").innerHTML = "";
-
+mineblock();
 }
 
 function updateMoney() {
@@ -1499,24 +1503,39 @@ if(isNaN(x)||x < 1 || x > 250)
 
 		
 function doMath() {             // Blockchain transaction is handles here as well
-	
+
+	   if (pot == 0){
+		   countWagers = 0;
+	   }
+	   
        if (money <= 0) {
           money = 0 ; }
        if (x > money) {
           x = money ; }
       money = money - x;  // x is the amount the player is wagering this turn
       pot = pot + x;
-	  
-	   if (countWagers < 25) { // Execute the blockchain function now
-		   countWagers += 1 ;
+
+	  countWagers += 1 ;
+	   if (countWagers == 2) {  // Get Ready to STOP the blockchain function now
+		   document.getElementById("stopBlockchain").innerHTML = "Maximum 11 blockchain wagers per hand !";
+	   }
+	   
+	   if (countWagers < 12) { // Execute the blockchain function now
 	   PVPCoinTransaction() 
 	   	data = x;           // Enter the wager amount into the blockchain
        transferCoins()
 	   }
-	   if (countWagers > 18) {  // Get Ready to STOP the blockchain function now
-		   document.getElementById("stopBlockchain").innerHTML = "Maximum 25 blockchain wagers per hand !";
+	   
+	   if (countWagers == 3) {  // Clear Statement
+	   		document.getElementById("stopBlockchain").style.display = 'none';
+			document.getElementById("CPU").style.display = 'none';
 	   }
+	   
 
+	   
+	   console.log("countWagers:", countWagers);
+	   
+	   
     if (wA == 0){  // display wager on tote board for A
     toteAce = toteAce + x;
     toteA.innerHTML = toteAce;
@@ -1636,6 +1655,7 @@ function doMath() {             // Blockchain transaction is handles here as wel
 	document.getElementById("yourbets").innerHTML = "Diamond accepted. Invite friends to play, Player vs Player. ";
     document.getElementById("betsDiamond").innerHTML = "Diamond";
                       }
+
                }
 doMath()
 
@@ -1655,7 +1675,6 @@ var params = "money_field=" + param;  // money_field is where I want to store th
 updateMoney()
 updateDatabase()  // This is not working. It's not updating the user money in the db. 
 updateStatus()
-
 }
 
 function banners() {    //  No longer using this. We are using bannerOne function instead
