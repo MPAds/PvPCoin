@@ -1,5 +1,6 @@
 
 body {
+	height: 200 px;
       background-image:url("images/pvpcoin.png");
       background-repeat:no-repeat;
 
@@ -54,7 +55,7 @@ top:140px;
 display: none;
 }
 
-#stopBlockchain {              /* line 851 game.js */
+#stopBlockchain {              /* line 1513 game.js & line 151 index.html*/
 color:#FFFFFF;
 position: absolute;
 left:535px;
@@ -827,13 +828,6 @@ top:585px;
 
 /* This next section is for our PVPcoin Player vs Player  */
 
-#unconfirmed {              /* These are .1 reward transactions waiting for 120 confirmations  */
-position: absolute;
-left:200px;
-top:460px;
-color:#000000;
-}
-
 #mined {              /* These are wagers, aka transactions   */
 position: absolute;
 left:890px;
@@ -841,17 +835,31 @@ top:400px;
 color:#660000;
 }
 
+#pending {              /* These are confirmed blocks and are earning stake rewards   */
+position: absolute;
+left:200px;
+top:425px;
+color:#000000;
+}
+
+#unconfirmed {              /* These are .1 reward transactions waiting for 120 confirmations  */
+position: absolute;
+left:200px;
+top:460px;
+color:#000000;
+}
+
+#total {              /* This is the total coins player currently has  */
+position: absolute;
+left:200px;
+top:514px;
+color:#000000;
+}
+
 #spend {              /* These are confirmed blocks and can spend   */
 position: absolute;
 left:200px;
 top:390px;
-color:#000000;
-}
-
-#staking {              /* These are confirmed blocks and are earning stake rewards   */
-position: absolute;
-left:200px;
-top:425px;
 color:#000000;
 }
 
@@ -873,6 +881,13 @@ color:#000000;
 position: absolute;
 left:1150px;
 top:400px;
+color:#000000;
+}
+
+#CPU {              /* These are reward values that show up in transaction area  */
+position: absolute;
+left:1150px;
+top:424px;
 color:#000000;
 }
 
