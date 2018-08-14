@@ -1,8 +1,9 @@
 // Copyright (C) 2018 EdwardNolan, Lakewood OH 44107, nolanedward@sbcglobal.net
 // All rights reserved.   7/30/18
 
-// Each player has the ability to CPU mine additional coins if the player wagers 7x in a hand.
+// Each player has the ability to CPU mine coins at the end of each hand even if not played.
 
+var cpuanswer = 0;
 
 	function mineblock() {
 	document.getElementById("stopBlockchain").style.display = 'none';
@@ -26,6 +27,10 @@
   document.getElementById("rew").innerHTML = "You received " + Reward + " coins.";
   Reward = 0;
   data = 0 ;
+  
+    cpuanswer = block.PvPCoins;
+	answer = cpuanswer + answer;
+	document.getElementById("total").innerHTML = answer;
 }
 
 	//Is new block valid with prev block? Check index, and compare hash of previous block
