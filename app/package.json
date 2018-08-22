@@ -1,0 +1,36 @@
+{
+  "name": "pvpcoin",
+  "version": "0.1.0",
+  "description": "A Cryptocurrency Player vs Player Card Game Desktop Application",
+  "license": "Contact: Edward Nolan 216-375-3096",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+	"package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . pvpcoin-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=EN --version-string.FileDescription=CE --version-string.ProductName=\"PlayerVsPlayerCoin\"",    
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MPAds/PvPCoin"
+},
+  "keywords": [
+     "blockchain",
+     "javscript",
+     "electron",
+	 "cryptocurrency",
+     "altcoin",
+     "dapp",
+	 "card game",
+     "roulette",
+     "horse racing",
+],
+  "author": "Edward Nolan <nolanedward@sbcglobal.net> (Edward Nolan)",
+  "license": "Contact: Edward Nolan 216-375-3096",
+  "devDependencies": {
+    "electron": "2.0.4"
+  }
+    "bugs": {
+    "url": "https://github.com/hskang9/blockchain/issues"
+},
+}
