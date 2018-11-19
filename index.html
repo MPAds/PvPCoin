@@ -13,35 +13,24 @@
         <link rel="stylesheet" type="text/css" href="game.css">
         <script type="text/javascript" src="css-pop.js"></script>			
     </head>
-    <body background="images/pvpcoin.png" style="width=100%" onLoad="updateMoney(); popup('popUpDiv'); click(); updown(); mp3()" oncontextmenu="return false;">
-<img background="images/pvpcoin.png">
-	<!--POPUP--> 
-<div id="container">
-<div id="mainContent">   
-    <div id="blanket" style="display:none;"></div>
-	<div id="popUpDiv" style="display:none;"> <a href="#" onclick="popup('popUpDiv')" >Click Here To Close This Pop Up</a> </div>
-    <!-- end #mainContent --></div>
-<!-- end #container --></div>	
-    <!-- / POPUP-->	
-	
-<!-- <div id ="pl">Testing Rounds Played</div>-->
-<div id="fb-root"></div>
-        <table id="oddsTable" width="100%">
+    <table id="oddsImage" width="100%">
             <tr>
-                <td><img src="images/1.png" id='a'  alt="One"></td>
-                <td><img src="images/2.png" id='2'  alt="Two"></td>
-                <td><img src="images/3.png" id='3'  alt="Three"></td>
-                <td><img src="images/4.png" id='4'  alt="Four"></td>
-                <td><img src="images/5.png" id='5'  alt="Five"></td>
-                <td><img src="images/6.png" id='6'  alt="Six"></td>
-                <td><img src="images/7.png" id='7'  alt="Seven"></td>
-                <td><img src="images/8.png" id='8'  alt="Eight"></td>
-                <td><img src="images/9.png" id='9'  alt="Nine"></td>
-                <td><img src="images/10.png" id='10'  alt="Ten"></td>
-                <td><img src="images/J.png" id='j'  alt="Jack"></td>
-                <td><img src="images/Q.png" id='q'  alt="Queen"></td>
-                <td><img src="images/K.png" id='k'  alt="King"></td>
-            </tr>
+                <td valign="top"><div  id="a"><img src="images/1.png"  alt="Ace"></div></td>
+                <td valign="top"><div  id="2"><img src="images/2.png"  alt="Two"></div></td>
+                <td valign="top"><div  id="3"><img src="images/3.png"  alt="Three"></div></td>
+                <td valign="top"><div  id="4"><img src="images/4.png"  alt="Four"></div></td>
+                <td valign="top"><div  id="5"><img src="images/5.png"  alt="Five"></div></td>
+                <td valign="top"><div  id="6"><img src="images/6.png"  alt="Six"></div></td>
+                <td valign="top"><div  id="7"><img src="images/7.png"  alt="Seven"></div></td>
+                <td valign="top"><div  id="8"><img src="images/8.png"  alt="Eight"></div></td>
+                <td valign="top"><div  id="9"><img src="images/9.png"  alt="Nine"></div></td>
+                <td valign="top"><div  id="10"><img src="images/10.png"  alt="Ten"></div></td>
+                <td valign="top"><div  id="j"><img src="images/J.png"  alt="Jack"></div></td>
+                <td valign="top"><div  id="q"><img src="images/Q.png"  alt="Queen"></div></td>
+                <td valign="top"><div  id="k"><img src="images/K.png"  alt="King"></div></td>
+           </tr>
+   </table>
+   <table id="oddsTable" width="100%">
             <tr>
                 <td><div class="position" id="odds1"></div></td>
                 <td><div class="position" id="odds2"></div></td>
@@ -58,7 +47,22 @@
                 <td><div class="position" id="oddsK"></div></td>
             </tr>
         </table>
+	
+
 <div id="guess"></div>
+
+    <body background="images/pvpcoin.png" style="width=100%" onLoad="updateMoney(); popup('popUpDiv'); click(); updown()" oncontextmenu="return false;">
+<img background="images/pvpcoin.png">
+
+	<!--POPUP--> 
+<div id="container">
+<div id="mainContent">   
+    <div id="blanket" style="display:none;"></div>
+	<div id="popUpDiv" style="display:none;"> <a href="#" onclick="popup('popUpDiv')" >Click Here To Close This Pop Up</a> </div>
+    <!-- end #mainContent --></div>
+<!-- end #container --></div>	
+    <!-- / POPUP-->
+
         <table width="100%">
 					
             <tr>

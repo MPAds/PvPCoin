@@ -9,13 +9,27 @@ body {
 .position {         /* odds */
    color:#FFFFFF;
 }
-#oddsTable {     /* Odds table */
+
+
+#oddsImage {     /* Odds Images */
+   width: 1350px;   
+   top: 0px;
+}
+#oddsImage td{      /*  odds Images td elements  */
+    width: 75px;
+    text-align:center;
+   vertical-align: top;
+}
+#oddsTable {     /* Odds Values */
     width: 1350px;   
 }
-#oddsTable td{      /*  odds table td elements  */
+#oddsTable td{      /*  odds Values td elements  */
     width: 105px;
     text-align:center;
 }
+
+
+
 
 #guess img {        /*  cards  */
    width: 35px; 
