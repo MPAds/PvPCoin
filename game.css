@@ -15,8 +15,8 @@ body {
    width: 1350px;   
    top: 0px;
 }
-#oddsImage td{      /*  odds Images td elements  */
-    width: 75px;
+#oddsImage td{      /*  odds Images td elements  was 75*/
+    width: 105px;
     text-align:center;
    vertical-align: top;
 }
@@ -24,6 +24,7 @@ body {
     width: 1350px;   
 }
 #oddsTable td{      /*  odds Values td elements  */
+   top: 0px;
     width: 105px;
     text-align:center;
 }
