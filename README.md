@@ -2,7 +2,8 @@
 
 PvPCoin Wallet is ready for download. https://github.com/MPAds/PvPCoin/releases
 One step closer to the vision. Todays release gives birth to the Windows and Linux wallet.
-<img src="/images/PvPwallet.png" />
+
+<img border="2" src="/images/PvPwallet.png" />
 
 Future updates will have the game embed within this wallet. 
 
