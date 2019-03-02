@@ -1,8 +1,11 @@
 # PvP aka PlayerVsPlayerCoin
 
+PvPCoin Wallet is ready for download. https://github.com/MPAds/PvPCoin/releases
 One step closer to the vision. Todays release gives birth to the Windows and Linux wallet.
 
-Future vision is to embed the game within this wallet. This will allow players to produce coins by simply playing the game. NO MONEY NEEDED, NO REAL GAMBLING. Play the TEST version http://pvpcoin.atwebpages.com/
+Future updates will have the game embed within this wallet. 
+
+This will allow players to produce coins by simply playing the game. NO MONEY NEEDED, NO REAL GAMBLING. Play the TEST version http://pvpcoin.atwebpages.com/
 
 <img src="/images/preview.png" />
 
